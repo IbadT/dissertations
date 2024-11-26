@@ -6,7 +6,6 @@ export const Dissertation = () => {
         <Flex vertical justify="center" align="center" minHeight="100vh" flexDirection="column" bg="gray.100" p={4} > 
             <Flex justify="center" style={{ margin: "2vmin" }}> 
                 <a href="/Диссертация.docx" download > Скачать выпускную работу </a> 
-                {/* <a href="/Article.docx" download color="blue.500">Скачать статью</a> */}
             </Flex> 
             <Flex justify="center"> 
                 <WordViewer /> 

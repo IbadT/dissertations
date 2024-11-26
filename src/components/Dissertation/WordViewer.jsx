@@ -8,7 +8,6 @@ const WordViewer = () => {
   useEffect(() => { 
     const loadFile = async () => { 
         const response = await fetch(filePath); 
-        // const response = await fetch('/Диссертация.docx');
         const arrayBuffer = await response.arrayBuffer(); 
         const result = await mammoth.convertToHtml({ arrayBuffer }); 
         setContent(result.value); // Устанавливаем HTML-содержимое 
@@ -18,8 +17,7 @@ const WordViewer = () => {
 
   return (
     <div>
-      {/* <input type="file" accept=".docx" onChange={handleFileUpload} /> Изменено accept */}
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <div style={{  maxWidth: "100vw", wordWrap: "break-word", margin: "0 10%" }} dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };

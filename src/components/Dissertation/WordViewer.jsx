@@ -17,7 +17,7 @@ const WordViewer = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: "red", maxWidth: "100vw", wordWrap: "break-word", margin: "0 10%", overflowX: "hidden" }} dangerouslySetInnerHTML={{ __html: content }} />
+      <div style={{ maxWidth: "100vw", wordWrap: "break-word", margin: "0 10%", overflowX: "hidden" }} dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };

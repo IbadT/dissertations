@@ -20,7 +20,7 @@ export const Dissertation = () => {
                 </a> 
                 {/* <Link href="/Диссертация.docx" download color="blue.500">Открыть выпускную работу</Link> */} 
             </Flex> 
-            <Flex justify="center" style={{ padding: "0 4vmin" }}> 
+            <Flex justify="center" style={{ margin: "0 5% 0 10%" }}> 
                 <WordViewer /> 
             </Flex> 
         </Flex>

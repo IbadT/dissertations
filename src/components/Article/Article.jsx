@@ -6,4 +6,4 @@ export const Article = () => {
             Article
         </Flex>
     )
-}
+};

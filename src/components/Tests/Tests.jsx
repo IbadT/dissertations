@@ -9,6 +9,10 @@ export const Tests = () => {
             <Flex>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScX94w1M5_ZpgPJufIbeYvNPlOLLkWjpJCd2qdjmJF0Mmy2gA/viewform">Тест на когнитивные навыки</a>
             </Flex>
+
+            <Flex>
+                Сделать только на когнитивные
+            </Flex>
         </Flex>
     )
 }

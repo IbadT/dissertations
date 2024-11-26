@@ -28,7 +28,7 @@ const layout = [
 ];
 
 
-export const Header = () => {
+export const HeaderComponent = () => {
     return (
         <Flex justify="center" style={{ width: "100wv" }}>
             <Flex align="center" justify="space-around" style={{ backgroundColor: "black", width: "80vw", height: "5vh", borderRadius: "0px 0px 10px 10px"}}>

@@ -1,14 +1,31 @@
-import { Flex } from "antd"
+import { Flex, Layout } from "antd"
 import { Outlet } from "react-router-dom";
-import { Header } from "../Header/Header";
-import { Footer } from "../Footer/Footer";
+import { HeaderComponent } from "../Header/Header";
+import { FooterComponent } from "../Footer/Footer";
+
+const { Header, Footer, Content } = Layout;
 
 export const Main = () => {
     return (
+
+        // <Layout>
+        //     <Header>
+        //         <HeaderComponent />
+        //     </Header>
+
+        //     <Content>
+        //         <Outlet />
+        //     </Content>
+
+        //     <Footer>
+        //         <FooterComponent />
+        //     </Footer>
+        // </Layout>
+
         <Flex vertical justify='space-between' style={{ height: "100vh", fontSize: "2.4vmin" }}>
-            <Header />
+            <HeaderComponent />
             <Outlet />
-            <Footer />
+            <FooterComponent />
         </Flex>
-    )
-}
+    );
+};

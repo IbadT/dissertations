@@ -8,7 +8,7 @@ export const Article = () => {
     const [size, setSize] = useState('large');
     return (
         <Flex vertical justify="center" align="center" minHeight="100vh" flexDirection="column" bg="gray.100" p={4} >
-            <Flex>⬇ Скачать презентацию ⬇</Flex>
+            <Flex>⬇ Скачать статью ⬇</Flex>
             <Flex>
                 <Button type="primary" shape="round" icon={<DownloadOutlined />} size={size} href="Article.docx"/>
             </Flex>
